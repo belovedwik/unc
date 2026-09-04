@@ -2,7 +2,7 @@
 <html lang="uk">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="description" content="Благодійний фонд У.Н.С. допомагає українським військовим розвідникам." />
     <title>УНС — Благодійний фонд</title>
     <link rel="icon" href="./assets/favicon.ico" />
@@ -24,7 +24,10 @@
         </a>
         <nav class="nav" id="site-nav">
           <a href="#top" data-i18n="nav.home">Головна</a>
+          <a href="#join" data-i18n="nav.join">Долучитись</a>
           <a href="#about" data-i18n="nav.about">Про нас</a>
+          <a href="#help" data-i18n="nav.help">Як працюємо</a>
+          <a href="#trust" data-i18n="nav.trust">Прозорість</a>
           <a href="#events" data-i18n="nav.events">Події</a>
           <a href="#thanks" data-i18n="nav.thanks">Відгуки</a>
           <a href="#project" data-i18n="nav.project">Фаєрбанка</a>
@@ -35,8 +38,7 @@
             <button type="button" data-lang="uk" aria-pressed="true">UA</button>
             <button type="button" data-lang="en" aria-pressed="false">EN</button>
           </div>
-          <button class="btn btn-primary" type="button" data-open-donate data-i18n="nav.donate">Зробити внесок</button>
-          <button class="menu-toggle" type="button" aria-controls="site-nav" aria-label="Menu">☰</button>
+          <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menu">☰</button>
         </div>
       </div>
     </header>
@@ -48,14 +50,43 @@
         </div>
         <div class="wrap hero-copy">
           <p class="kicker" data-i18n="hero.kicker">Розвідка · Підтримка · Точність</p>
+          <p class="hero-accent" data-i18n="hero.accent">Підтримка військової розвідки України</p>
           <h1 data-i18n="hero.title">Тиша, в якій працюють герої.</h1>
           <p class="lead" data-i18n="hero.subtitle">Допоможи тим, хто бачить далі.</p>
-          <p data-i18n="hero.text">
-            Наші герої — військові розвідники, чия невидима робота є вирішальною для захисту України.
+          <p class="hero-fact" data-i18n="hero.fact">
+            Підтримуємо військових розвідників України обладнанням, засобами зв’язку, РЕБ, оптикою та іншими необхідними засобами.
           </p>
+          <p data-i18n="hero.text"></p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#about" data-i18n="hero.more">Дізнатися більше</a>
-            <button class="btn btn-ghost" type="button" data-open-donate data-i18n="nav.donate">Зробити внесок</button>
+            <button class="btn btn-primary" type="button" data-open-donate="once" data-i18n="donate.floatLabel">Допомога фонду</button>
+            <a class="btn btn-ghost" href="#about" data-i18n="hero.more">Дізнатися більше</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section together" id="join">
+        <div class="wrap">
+          <p class="kicker" data-i18n="join.kicker">Разом</p>
+          <h2 data-i18n="join.title">Хтось допомагає фінансово. Хтось воює зі зброєю в руках.</h2>
+          <p class="together-line" data-i18n="join.line">Усі ми разом наближаємо перемогу.</p>
+          <p class="together-text" data-i18n="join.text"></p>
+          <p class="together-text" data-i18n="join.easy"></p>
+          <div class="join-grid">
+            <article class="join-card">
+              <h3 data-i18n="join.card1Title"></h3>
+              <p data-i18n="join.card1Text"></p>
+              <button class="btn btn-primary" type="button" data-open-donate="once" data-i18n="donate.onceTab">Разовий внесок</button>
+            </article>
+            <article class="join-card">
+              <h3 data-i18n="join.card2Title"></h3>
+              <p data-i18n="join.card2Text"></p>
+              <button class="btn btn-ghost" type="button" data-open-donate="sub" data-i18n="donate.subTab">Підписка</button>
+            </article>
+            <article class="join-card">
+              <h3 data-i18n="join.card3Title"></h3>
+              <p data-i18n="join.card3Text"></p>
+              <a class="btn btn-ghost" href="#contact" data-i18n="join.write">Написати фонду</a>
+            </article>
           </div>
         </div>
       </section>
@@ -75,12 +106,20 @@
               <button type="button" data-lightbox="./assets/about/ab_photo_14.jpg"><img src="./assets/about/ab_photo_14.jpg" alt="" /></button>
               <button type="button" data-lightbox="./assets/about/ab_photo_15.jpg"><img src="./assets/about/ab_photo_15.jpg" alt="" /></button>
             </div>
-            <div class="about-copy">
-              <h3 data-i18n="about.heading">Тиша, в якій працюють герої, потребує наших голосів.</h3>
-              <p data-i18n="about.p1"></p>
-              <p data-i18n="about.p2"></p>
-              <p data-i18n="about.p3"></p>
-            </div>
+          </div>
+          <div class="about-cols">
+            <article>
+              <h3 data-i18n="about.col1Title">Хто ми</h3>
+              <p data-i18n="about.col1Text"></p>
+            </article>
+            <article>
+              <h3 data-i18n="about.col2Title">Кому допомагаємо</h3>
+              <p data-i18n="about.col2Text"></p>
+            </article>
+            <article>
+              <h3 data-i18n="about.col3Title">Як працюємо</h3>
+              <p data-i18n="about.col3Text"></p>
+            </article>
           </div>
           <div class="needs">
             <article class="need">
@@ -100,6 +139,33 @@
               <p data-i18n="needs.gear.text"></p>
             </article>
           </div>
+        </div>
+      </section>
+
+      <section class="section" id="help">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="kicker" data-i18n="help.kicker">Шлях допомоги</p>
+            <h2 data-i18n="help.title">Як працює ваша допомога</h2>
+          </div>
+          <ol class="help-flow">
+            <li data-step="0">Ваш внесок</li>
+            <li data-step="1">Фонд отримує запит</li>
+            <li data-step="2">Закупівля обладнання</li>
+            <li data-step="3">Передача підрозділу</li>
+            <li data-step="4">Звіт</li>
+          </ol>
+          <p class="help-note" data-i18n="help.note">Ми не просто збираємо кошти — ми перетворюємо їх на конкретну допомогу.</p>
+        </div>
+      </section>
+
+      <section class="section" id="trust">
+        <div class="wrap trust-box">
+          <p class="kicker" data-i18n="trust.kicker">Прозорість</p>
+          <h2 data-i18n="trust.title">Ми звітуємо</h2>
+          <p data-i18n="trust.text"></p>
+          <p class="together-line" data-i18n="trust.request"></p>
+          <a class="btn btn-primary" href="#contact" data-i18n="trust.write">Запитати звіт</a>
         </div>
       </section>
 
@@ -218,9 +284,33 @@
       </div>
     </footer>
 
-    <dialog class="dialog" id="donate-dialog">
-      <div class="dialog-card">
-        <h2 data-i18n="donate.title">Реквізити для внеску</h2>
+    <aside class="float-support">
+      <button type="button" data-open-donate="once" data-i18n="donate.floatLabel">Допомога фонду</button>
+    </aside>
+
+    <div class="sheet" id="donate-sheet" role="dialog" aria-modal="true" aria-hidden="true" data-mode="once">
+      <button class="sheet-scrim" type="button" data-donate-close aria-label="Close"></button>
+      <button class="lightbox-close" type="button" data-donate-close data-i18n-aria="lightboxClose" aria-label="Закрити">×</button>
+      <div class="sheet-card">
+        <h2 data-i18n="donate.title">Допомога фонду У.Н.С.</h2>
+        <p class="donate-funds" data-i18n="donate.funds"></p>
+        <p class="donate-reports" data-i18n="donate.reports"></p>
+        <a class="donate-ask" href="#contact" data-donate-close data-i18n="donate.ask"></a>
+        <div class="donate-tabs" role="tablist">
+          <button type="button" role="tab" id="tab-once" data-donate-tab="once" aria-selected="true" data-i18n="donate.onceTab">Разовий внесок</button>
+          <button type="button" role="tab" id="tab-sub" data-donate-tab="sub" aria-selected="false" data-i18n="donate.subTab">Підписка</button>
+        </div>
+        <p class="donate-lead" data-donate-panel="once" data-i18n="donate.onceLead"></p>
+        <p class="donate-lead" data-donate-panel="sub" hidden data-i18n="donate.subLead"></p>
+        <div class="amount-row" data-donate-panel="sub" hidden>
+          <p class="amount-label" data-i18n="donate.amountsLabel"></p>
+          <div class="amount-chips">
+            <button type="button" data-amount="300">300 ₴</button>
+            <button type="button" data-amount="500">500 ₴</button>
+            <button type="button" data-amount="1000">1 000 ₴</button>
+            <button type="button" data-amount="2500">2 500 ₴</button>
+          </div>
+        </div>
         <dl>
           <div class="pay-row">
             <div>
@@ -248,21 +338,47 @@
               <dd data-i18n="donate.bank">АТ КБ «Приватбанк»</dd>
             </div>
           </div>
+          <div class="pay-row">
+            <div>
+              <dt data-i18n="donate.purposeLabel">Призначення платежу</dt>
+              <dd id="donate-purpose">Благодійна допомога</dd>
+            </div>
+            <button class="copy-btn" type="button" data-copy-purpose data-i18n="donate.copy">Копіювати</button>
+          </div>
         </dl>
-        <div class="dialog-actions">
-          <button class="btn btn-primary" type="button" data-close data-i18n="donate.close">Закрити</button>
+        <div class="intl-block">
+          <h3 data-i18n="donate.intlTitle">Міжнародна допомога</h3>
+          <p class="donate-funds" data-i18n="donate.intlText"></p>
+          <div class="pay-row">
+            <div>
+              <dt data-i18n="donate.currencyLabel">Валюти</dt>
+              <dd data-i18n="donate.currency">UAH · EUR · USD</dd>
+            </div>
+          </div>
+          <div class="pay-row">
+            <div>
+              <dt data-i18n="donate.swiftLabel">SWIFT</dt>
+              <dd>PBANUA2X</dd>
+            </div>
+            <button class="copy-btn" type="button" data-copy="PBANUA2X" data-i18n="donate.copy">Копіювати</button>
+          </div>
+          <div class="pay-row">
+            <div>
+              <dt data-i18n="donate.cardsLabel">Картка / Apple Pay / Google Pay</dt>
+              <dd data-i18n="donate.cards"></dd>
+            </div>
+          </div>
         </div>
       </div>
-    </dialog>
+    </div>
 
-    <dialog class="dialog lightbox" id="lightbox">
-      <div class="lightbox-card">
-        <img id="lightbox-image" alt="" />
-        <div class="dialog-actions">
-          <button class="btn btn-primary" type="button" data-close data-i18n="lightboxClose">Закрити</button>
-        </div>
-      </div>
-    </dialog>
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+      <button class="lightbox-scrim" type="button" data-lightbox-close aria-label="Close"></button>
+      <button class="lightbox-close" type="button" data-lightbox-close data-i18n-aria="lightboxClose" aria-label="Закрити">×</button>
+      <button class="lightbox-arrow lightbox-prev" type="button" data-lightbox-prev data-i18n-aria="lightboxPrev" aria-label="Попереднє">‹</button>
+      <img id="lightbox-image" alt="" />
+      <button class="lightbox-arrow lightbox-next" type="button" data-lightbox-next data-i18n-aria="lightboxNext" aria-label="Наступне">›</button>
+    </div>
 
     <script>
       document.getElementById("year").textContent = String(new Date().getFullYear());
