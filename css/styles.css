@@ -25,6 +25,11 @@
 html {
   scroll-behavior: smooth;
   font-size: 18px;
+  scroll-padding-top: calc(var(--nav-h) + 10px);
+}
+
+section[id] {
+  scroll-margin-top: calc(var(--nav-h) + 10px);
 }
 
 body {
