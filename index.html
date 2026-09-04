@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Благодійний фонд У.Н.С. допомагає українським військовим розвідникам." />
+    <title>УНС — Благодійний фонд</title>
+    <link rel="icon" href="./assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top">
+          <img src="./assets/logo.png" alt="" />
+          <span data-i18n="orgName">Благодійний фонд У.Н.С.</span>
+        </a>
+        <nav class="nav" id="site-nav">
+          <a href="#top" data-i18n="nav.home">Головна</a>
+          <a href="#about" data-i18n="nav.about">Про нас</a>
+          <a href="#events" data-i18n="nav.events">Події</a>
+          <a href="#thanks" data-i18n="nav.thanks">Відгуки</a>
+          <a href="#project" data-i18n="nav.project">Фаєрбанка</a>
+          <a href="#contact" data-i18n="nav.contact">Контакти</a>
+        </nav>
+        <div class="header-actions">
+          <div class="lang" role="group" aria-label="Language">
+            <button type="button" data-lang="uk" aria-pressed="true">UA</button>
+            <button type="button" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+          <button class="btn btn-primary" type="button" data-open-donate data-i18n="nav.donate">Зробити внесок</button>
+          <button class="menu-toggle" type="button" aria-controls="site-nav" aria-label="Menu">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-media">
+          <img src="./assets/hero.png" alt="" />
+        </div>
+        <div class="wrap hero-copy">
+          <p class="kicker" data-i18n="hero.kicker">Розвідка · Підтримка · Точність</p>
+          <h1 data-i18n="hero.title">Тиша, в якій працюють герої.</h1>
+          <p class="lead" data-i18n="hero.subtitle">Допоможи тим, хто бачить далі.</p>
+          <p data-i18n="hero.text">
+            Наші герої — військові розвідники, чия невидима робота є вирішальною для захисту України.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#about" data-i18n="hero.more">Дізнатися більше</a>
+            <button class="btn btn-ghost" type="button" data-open-donate data-i18n="nav.donate">Зробити внесок</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="kicker" data-i18n="about.kicker">Про нас</p>
+            <h2 data-i18n="about.title">БО БФ У.Н.С.</h2>
+          </div>
+          <div class="about-grid">
+            <div class="photo-grid">
+              <button type="button" data-lightbox="./assets/about/ab_photo_1.jpg"><img src="./assets/about/ab_photo_1.jpg" alt="" /></button>
+              <button type="button" data-lightbox="./assets/about/ab_photo_11.jpg"><img src="./assets/about/ab_photo_11.jpg" alt="" /></button>
+              <button type="button" data-lightbox="./assets/about/ab_photo_12.jpg"><img src="./assets/about/ab_photo_12.jpg" alt="" /></button>
+              <button type="button" data-lightbox="./assets/about/ab_photo_13.jpg"><img src="./assets/about/ab_photo_13.jpg" alt="" /></button>
+              <button type="button" data-lightbox="./assets/about/ab_photo_14.jpg"><img src="./assets/about/ab_photo_14.jpg" alt="" /></button>
+              <button type="button" data-lightbox="./assets/about/ab_photo_15.jpg"><img src="./assets/about/ab_photo_15.jpg" alt="" /></button>
+            </div>
+            <div class="about-copy">
+              <h3 data-i18n="about.heading">Тиша, в якій працюють герої, потребує наших голосів.</h3>
+              <p data-i18n="about.p1"></p>
+              <p data-i18n="about.p2"></p>
+              <p data-i18n="about.p3"></p>
+            </div>
+          </div>
+          <div class="needs">
+            <article class="need">
+              <h4 data-i18n="needs.comms.title"></h4>
+              <p data-i18n="needs.comms.text"></p>
+            </article>
+            <article class="need">
+              <h4 data-i18n="needs.optics.title"></h4>
+              <p data-i18n="needs.optics.text"></p>
+            </article>
+            <article class="need">
+              <h4 data-i18n="needs.med.title"></h4>
+              <p data-i18n="needs.med.text"></p>
+            </article>
+            <article class="need">
+              <h4 data-i18n="needs.gear.title"></h4>
+              <p data-i18n="needs.gear.text"></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="events">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="kicker" data-i18n="events.kicker">Наша робота</p>
+            <h2 data-i18n="events.title">Події</h2>
+          </div>
+          <div class="gallery">
+            <button type="button" data-lightbox="./assets/events/ev_photo_1.jpg"><img src="./assets/events/ev_photo_1.jpg" alt="" /></button>
+            <button type="button" data-lightbox="./assets/events/ev_photo_11.jpg"><img src="./assets/events/ev_photo_11.jpg" alt="" /></button>
+            <button type="button" data-lightbox="./assets/events/ev_photo_12.jpg"><img src="./assets/events/ev_photo_12.jpg" alt="" /></button>
+            <button type="button" data-lightbox="./assets/events/ev_photo_13.jpg"><img src="./assets/events/ev_photo_13.jpg" alt="" /></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="thanks">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="kicker" data-i18n="thanks.kicker">Зворотний зв’язок</p>
+            <h2 data-i18n="thanks.title">Нам дякують</h2>
+          </div>
+          <div class="thanks-track">
+            <article class="card">
+              <img src="./assets/testimonials/img_7621.jpg" alt="" />
+              <p data-thanks="0"></p>
+            </article>
+            <article class="card">
+              <img src="./assets/testimonials/img_7622.jpg" alt="" />
+              <p data-thanks="1"></p>
+            </article>
+            <article class="card">
+              <img src="./assets/testimonials/img_7623.jpg" alt="" />
+              <p data-thanks="2"></p>
+            </article>
+            <article class="card">
+              <img src="./assets/testimonials/img_7624.jpg" alt="" />
+              <p data-thanks="3"></p>
+            </article>
+            <article class="card">
+              <img src="./assets/testimonials/img_7542.jpg" alt="" />
+              <p data-thanks="4"></p>
+            </article>
+            <article class="card">
+              <img src="./assets/testimonials/img_7534.jpg" alt="" />
+              <p data-thanks="5"></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="project">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="kicker" data-i18n="project.kicker">Проєкт</p>
+            <h2 data-i18n="project.title">Фаєрбанка</h2>
+          </div>
+          <div class="project-grid">
+            <div class="project-copy">
+              <h3 data-i18n="project.heading"></h3>
+              <p data-i18n="project.intro"></p>
+              <ul>
+                <li data-use="0"></li>
+                <li data-use="1"></li>
+                <li data-use="2"></li>
+                <li data-use="3"></li>
+                <li data-use="4"></li>
+                <li data-use="5"></li>
+              </ul>
+            </div>
+            <img class="project-logo" src="./assets/faerbanka/fb_logo.jpg" alt="Firebanka" />
+          </div>
+          <div class="gallery" style="margin-top: 28px">
+            <button type="button" data-lightbox="./assets/faerbanka/fb_photo_1.jpg"><img src="./assets/faerbanka/fb_photo_1.jpg" alt="" /></button>
+            <button type="button" data-lightbox="./assets/faerbanka/fb_photo_2.jpg"><img src="./assets/faerbanka/fb_photo_2.jpg" alt="" /></button>
+            <button type="button" data-lightbox="./assets/faerbanka/fb_photo_3.jpg"><img src="./assets/faerbanka/fb_photo_3.jpg" alt="" /></button>
+            <button type="button" data-lightbox="./assets/faerbanka/fb_photo_6.jpg"><img src="./assets/faerbanka/fb_photo_6.jpg" alt="" /></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="kicker" data-i18n="contact.kicker">Наші контакти</p>
+            <h2 data-i18n="contact.title">Зв’яжіться з нами</h2>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-copy">
+              <h3 data-i18n="contact.heading"></h3>
+              <p class="muted" data-i18n="contact.text"></p>
+              <ul>
+                <li><a href="mailto:info@unc.org.ua">info@unc.org.ua</a></li>
+              </ul>
+            </div>
+            <form id="contact-form">
+              <label for="name" data-i18n="contact.name">Ваше ім’я</label>
+              <input id="name" name="name" required data-i18n-placeholder="contact.namePh" />
+              <label for="phone" data-i18n="contact.phone">Телефон</label>
+              <input id="phone" name="phone" type="tel" required data-i18n-placeholder="contact.phonePh" />
+              <label for="message" data-i18n="contact.message">Повідомлення</label>
+              <textarea id="message" name="message" rows="6" required data-i18n-placeholder="contact.messagePh"></textarea>
+              <button class="btn btn-primary" type="submit" data-i18n="contact.send">Відправити</button>
+              <p class="form-note" id="form-note"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>© <span id="year">2026</span> · <span data-i18n="footer"></span></p>
+      </div>
+    </footer>
+
+    <dialog class="dialog" id="donate-dialog">
+      <div class="dialog-card">
+        <h2 data-i18n="donate.title">Реквізити для внеску</h2>
+        <dl>
+          <div class="pay-row">
+            <div>
+              <dt data-i18n="donate.recipientLabel">Отримувач</dt>
+              <dd data-i18n="donate.recipient">БО БФ У.Н.С.</dd>
+            </div>
+          </div>
+          <div class="pay-row">
+            <div>
+              <dt data-i18n="donate.codeLabel">Код</dt>
+              <dd>45682236</dd>
+            </div>
+            <button class="copy-btn" type="button" data-copy="45682236" data-i18n="donate.copy">Копіювати</button>
+          </div>
+          <div class="pay-row">
+            <div>
+              <dt data-i18n="donate.ibanLabel">IBAN</dt>
+              <dd>UA663052990000026002036816850</dd>
+            </div>
+            <button class="copy-btn" type="button" data-copy="UA663052990000026002036816850" data-i18n="donate.copy">Копіювати</button>
+          </div>
+          <div class="pay-row">
+            <div>
+              <dt data-i18n="donate.bankLabel">Банк</dt>
+              <dd data-i18n="donate.bank">АТ КБ «Приватбанк»</dd>
+            </div>
+          </div>
+        </dl>
+        <div class="dialog-actions">
+          <button class="btn btn-primary" type="button" data-close data-i18n="donate.close">Закрити</button>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="dialog lightbox" id="lightbox">
+      <div class="lightbox-card">
+        <img id="lightbox-image" alt="" />
+        <div class="dialog-actions">
+          <button class="btn btn-primary" type="button" data-close data-i18n="lightboxClose">Закрити</button>
+        </div>
+      </div>
+    </dialog>
+
+    <script>
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+    </script>
+    <script src="./js/i18n.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
